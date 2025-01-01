@@ -34,7 +34,7 @@ public class RateLimitITest {
     void setUp() {
         rateLimit = new RateLimit();
         rateLimit.rateLimitAlgo = "fixed";
-        rateLimit.rateLimitRPM = 5;
+        rateLimit.rateLimitRPM = 10;
 
         request = mock(HttpServletRequest.class);
         response = mock(HttpServletResponse.class);
